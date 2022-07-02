@@ -1,0 +1,11 @@
+.handler {
+    margin:600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.handler h1 {
+    font-size:80px;
+    color:red;
+}
+
