@@ -7,6 +7,7 @@ import { useState } from "react";
 import Cart from "./common/cart/Cart";
 import Sdata from "./components/shop/Sdata";
 import Footer from "./components/footer/Footer";
+import CookieConsent from "react-cookie-consent";
 
 function App(){
   // pasul 1 : facem fetch la date din database
@@ -48,6 +49,15 @@ function App(){
         </Switch>
         <Footer />
       </Router>
+      <CookieConsent 
+      debug={true}
+      location="bottom"
+      style={{background:'#000',textAlign:"left"}}
+      buttonStyle={{color:'#000',background:'#fff',fontSize:'14px'}}
+      buttonText ='Accept'
+      >
+        This site uses cookies.See our privacy policy for more.
+        </CookieConsent>
     </>
   )
 }
